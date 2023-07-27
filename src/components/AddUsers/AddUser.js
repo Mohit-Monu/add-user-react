@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./AddUser.css";
 import ErrorModel from "../ErrorModel/ErrorModel";
+import Wrapper from "../Helpers/Wrapper"
 
 function AddUser(props) {
   const [username, setUserName] = useState("");
@@ -40,7 +41,7 @@ function AddUser(props) {
     setError(null)
   }
   return (
-    <div>
+    <Wrapper>
       {error && <ErrorModel title={error.title} message={error.message} onDismisBox={DismisBoxHandler} ></ErrorModel>}
       <form onSubmit={AddUserHandler}>
         <div className="form-control">
@@ -53,7 +54,7 @@ function AddUser(props) {
           Add User
         </button>
       </form>
-    </div>
+    </Wrapper>
   );
 }
 export default AddUser;
