@@ -7,10 +7,12 @@ function App() {
     {
       username: "Max",
       age: 31,
+      college:"ABCD"
     },
     {
       username: "Rax",
       age: 29,
+      college:"WXYZ"
     },
   ]);
 

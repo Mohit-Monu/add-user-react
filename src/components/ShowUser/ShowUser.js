@@ -4,7 +4,7 @@ function ShowUser(props) {
     <div key={index} >
       <ul className="goal-list">
         <li className="goal-item">
-          {items.username} ({items.age} years old)
+          {items.username} ({items.age} years old ) from {items.college} College
         </li>
       </ul>
     </div>
